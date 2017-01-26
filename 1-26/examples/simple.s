@@ -1,3 +1,4 @@
+# return 1;
 .globl main
 .intel_syntax noprefix
 
