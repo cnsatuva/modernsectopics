@@ -22,7 +22,7 @@ class Notary(LineReceiver):
         logging.info('welcome %s' % name)
         self.sendLine('e = %s' % self.key.e)
         self.sendLine('n = %s' % self.key.n)
-        self.signed_messages.append(n - 1)  # (-1)^e = -1
+        self.signed_messages.append(self.key.n - 1)  # (-1)^e = -1
         self.sendLine('Want a signature?')
         self.state = 'GOTNAME'
 
