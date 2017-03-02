@@ -14,7 +14,7 @@ class Notary(LineReceiver):
         logging.info('new connection')
 
     def connectionMade(self):
-        self.sendLine("Hey it's your pal Elon Musk. What's your name?")
+        self.sendLine("Hey it's your pal Elon Musk. What's your computing ID?")
 
     def handle_GETNAME(self, name):
         self.name = name
